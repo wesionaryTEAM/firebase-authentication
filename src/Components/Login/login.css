@@ -1,24 +1,26 @@
-.register-form{
+body{
+  background:rgb(0, 255, 213);  
+}
+.login-form{
     position: absolute;
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
-    width:600px;
-    background: white;
-    
+    background:white;
+    width: 500px;
 }
-.register-form h2 {
+.login-form h2 {
     text-align: center;
     padding:0 0 20px 0;
     border-bottom:1px solid silver;
 }
-.register-form form{
+.login-form form{
     padding: 0 40px;
     box-sizing:border-box;
 }
 form .input-field{
     position: relative;
-    border-bottom: 2px solid #adadad;
+    border-bottom: 2px solid black;
     margin:30px 0;
 }
 .input-field input{
@@ -34,9 +36,9 @@ form .input-field{
     position:absolute;
     top:50%;
     left:5px;
-    color: #adadad;
+    color: black;
     transform: translateY(-50%);
-    font-size:16px;
+    font-size:25px;
     pointer-events:none;
     transition: .5s;
 }
@@ -47,43 +49,38 @@ form .input-field{
     left:0;
     width:0%;
     height:2px;
-    background-color: blue;
+    background-color: red;
     transition: .5s;
 }
 .input-field input:focus ~ label,
 .input-field input:valid ~ label{
     top:-5px;
-    color:blue;
+    color:orange;
 }
 .input-field input:focus~span::before,
 .input-field input:focus~span::before{
     width:100%;
 }
-button{
-    width:100%;
-    height:50px;
-    border:2px solid;
-    background: blue;
-   
-    font-size: 18px;
-    color:white;
-    font-weight:700;
-    cursor: pointer;
-}
 button:hover{
-    border-color:red;
+    border-color:orange;
     transition:.5s;
 }
-.login-link{
+.register{
     margin:30px;
     text-align: center;
     font-size: 16px;
-    color:#adadad;
+    color:black;
 }
-.login-link a{
+.register a{
     text-decoration: none;
     color:blue;
 }
-.login-link a:hover{
+.register a:hover{
     text-decoration: underline;
+}
+.google-login-btn button{
+    background-color:maroon;
+}
+.login-title{
+    color:black;
 }
