@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import {Link} from 'react-router-dom';
+import { auth ,provider} from '../../firebase';
 import './login.css';
 
 export default function Login() {
@@ -18,6 +19,10 @@ export default function Login() {
         else if(name==='password'){
             setPassword=(value);
         }
+    }
+    loginInWithGoogle = (e) =>{
+        e.preventDefault();
+        auth.signInWithPopup(provider)
     }
     return (
         <div>
@@ -41,7 +46,7 @@ export default function Login() {
                         <button type="submit" onClick={(e)=>loginWithEmailAndPassword(e,email,password)}>Login</button>
                         </div>
                         <div className="google-login-btn">
-                        <button type="submit">Login With Google</button>
+                        <button type="submit" onClick={loginInWithGoogle}>Login With Google</button>
                         </div>
                         <div className="register">
                             Dont Have an Account?<Link to="/signup">Sign Up</Link>
