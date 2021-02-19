@@ -3,15 +3,15 @@ import "firebase/auth";
 import "firebase/firestore";
 
 var firebaseConfig = {
-    apiKey: "AIzaSyDdxuvqKnEMBhAUeDWUTUw7QbJ-lib8DRw",
-    authDomain: "authentication-demo-d2a24.firebaseapp.com",
-    projectId: "authentication-demo-d2a24",
-    storageBucket: "authentication-demo-d2a24.appspot.com",
-    messagingSenderId: "879058297661",
-    appId: "1:879058297661:web:a59a040adea57d6ae6db54"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  apiKey: "AIzaSyDIxj8f8YwRVyTgdQHXyMujjybqeW-u_oY",
+  authDomain: "fir-authentication-e633d.firebaseapp.com",
+  projectId: "fir-authentication-e633d",
+  storageBucket: "fir-authentication-e633d.appspot.com",
+  messagingSenderId: "89397786367",
+  appId: "1:89397786367:web:3acab50b6236dcb608beca"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
   const auth=firebase.auth();
   const firestore=firebase.firestore();
   export {auth,firestore};
